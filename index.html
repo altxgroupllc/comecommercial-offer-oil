@@ -98,26 +98,26 @@
         }
 
         body {
-            padding-top: 50px;
+            padding-top: 60px;
         }
 
         @media (max-width: 768px) {
             body {
-                padding-top: 45px;
+                padding-top: 50px;
             }
 
             header {
-                padding: 4px 0;
+                padding: 6px 0;
             }
         }
 
         @media (max-width: 480px) {
             body {
-                padding-top: 40px;
+                padding-top: 45px;
             }
 
             header {
-                padding: 3px 0;
+                padding: 5px 0;
             }
         }
 
@@ -129,48 +129,30 @@
             gap: 10px;
         }
 
-        .logo-container {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
 
-        .logo-container img {
-            max-width: 80px;
-            height: auto;
-            background: rgba(255, 255, 255, 0.15);
-            padding: 5px;
-            border-radius: 8px;
-            border: 1px solid rgba(0, 212, 255, 0.5);
-            box-shadow: 0 0 15px rgba(0, 212, 255, 0.3), 0 0 30px rgba(255, 215, 0, 0.15);
-            transition: all 0.3s ease;
-        }
-
-        .logo-container img:hover {
-            transform: scale(1.05);
-            box-shadow: 0 0 30px rgba(0, 212, 255, 0.5), 0 0 60px rgba(255, 215, 0, 0.25);
-            border-color: var(--electric-blue);
+        .company-info {
+            text-align: center;
         }
 
         .company-info h1 {
             font-family: 'Oswald', sans-serif;
-            font-size: 0.9em;
+            font-size: 1.1em;
             font-weight: 700;
             background: var(--accent-gradient);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
-            letter-spacing: 0.3px;
+            letter-spacing: 0.5px;
             text-transform: uppercase;
-            margin-bottom: 1px;
-            line-height: 1.1;
+            margin-bottom: 2px;
+            line-height: 1.2;
         }
 
         .company-info p {
             color: var(--text-secondary);
-            font-size: 0.55em;
-            margin: 0;
-            line-height: 1.1;
+            font-size: 0.7em;
+            margin: 1px 0;
+            line-height: 1.2;
         }
 
         /* Hero Section */
@@ -832,24 +814,8 @@
                 flex-wrap: nowrap;
             }
 
-            .logo-container {
-                flex-direction: row;
-                align-items: center;
-                gap: 8px;
-                flex: 0 0 auto;
-            }
-
-            .logo-container img {
-                max-width: 50px;
-                padding: 4px;
-                flex-shrink: 0;
-            }
-
             .company-info {
-                text-align: left;
-                flex: 1 1 auto;
-                min-width: 0;
-                overflow: hidden;
+                text-align: center;
             }
 
             .company-info h1 {
@@ -1018,17 +984,12 @@
                 font-size: 0.95em;
             }
 
-            .logo-container img {
-                max-width: 35px;
-                padding: 2px;
-            }
-
             .company-info h1 {
-                font-size: 0.65em;
+                font-size: 0.9em;
             }
 
             .company-info p {
-                font-size: 0.4em;
+                font-size: 0.6em;
             }
 
             .hero {
@@ -1125,14 +1086,11 @@
     <header>
         <div class="container">
             <div class="header-content">
-                <div class="logo-container">
-                    <img src="фото/лого.jpg" alt="Логотип ООО А Плюс">
-                    <div class="company-info">
-                        <h1>ООО «А Плюс»</h1>
-                        <p>Общество с ограниченной ответственностью «А Плюс»</p>
-                        <p>г. Новосибирск, 630007, ул. Фабричная, д.14, офис 300</p>
-                        <p>ИНН 5407979188, КПП 540701001</p>
-                    </div>
+                <div class="company-info">
+                    <h1>ООО «А Плюс»</h1>
+                    <p>Общество с ограниченной ответственностью «А Плюс»</p>
+                    <p>г. Новосибирск, 630007, ул. Фабричная, д.14, офис 300</p>
+                    <p>ИНН 5407979188, КПП 540701001</p>
                 </div>
             </div>
         </div>

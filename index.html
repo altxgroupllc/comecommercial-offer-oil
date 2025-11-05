@@ -109,13 +109,13 @@
         }
 
         .logo-container img {
-            max-width: 80px;
+            max-width: 120px;
             height: auto;
             background: rgba(255, 255, 255, 0.15);
-            padding: 6px;
-            border-radius: 8px;
+            padding: 8px;
+            border-radius: 10px;
             border: 2px solid rgba(0, 212, 255, 0.5);
-            box-shadow: 0 0 20px rgba(0, 212, 255, 0.3), 0 0 40px rgba(255, 215, 0, 0.15);
+            box-shadow: 0 0 25px rgba(0, 212, 255, 0.4), 0 0 50px rgba(255, 215, 0, 0.2);
             transition: all 0.3s ease;
         }
 
@@ -786,11 +786,11 @@
             }
 
             body {
-                font-size: 0.85em;
+                font-size: 0.9em;
             }
 
             p, li, td, span {
-                font-size: 0.95em;
+                font-size: 1em;
             }
 
             header {
@@ -802,29 +802,41 @@
                 align-items: center;
                 text-align: left;
                 gap: 8px;
+                flex-wrap: nowrap;
             }
 
             .logo-container {
                 flex-direction: row;
                 align-items: center;
                 gap: 8px;
+                flex: 0 0 auto;
             }
 
             .logo-container img {
-                max-width: 60px;
-                padding: 5px;
+                max-width: 50px;
+                padding: 4px;
+                flex-shrink: 0;
             }
 
             .company-info {
                 text-align: left;
+                flex: 1 1 auto;
+                min-width: 0;
+                overflow: hidden;
             }
 
             .company-info h1 {
-                font-size: 0.95em;
+                font-size: 0.85em;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
             }
 
             .company-info p {
-                font-size: 0.6em;
+                font-size: 0.55em;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
             }
 
             .hero {
@@ -838,7 +850,7 @@
             }
 
             .hero p {
-                font-size: 0.75em;
+                font-size: 0.8em;
                 padding: 0 10px;
             }
 
@@ -865,14 +877,14 @@
             }
 
             .question-card-content p {
-                font-size: 0.7em;
+                font-size: 0.75em;
                 line-height: 1.6;
             }
 
             .question-card-content ul,
             .question-card-content ol {
                 padding-left: 20px;
-                font-size: 0.7em;
+                font-size: 0.75em;
             }
 
             .question-card-content li {
@@ -960,11 +972,11 @@
             }
 
             body {
-                font-size: 0.75em;
+                font-size: 0.8em;
             }
 
             p, li, td, span {
-                font-size: 0.9em;
+                font-size: 0.95em;
             }
 
             .logo-container img {
@@ -990,7 +1002,7 @@
             }
 
             .hero p {
-                font-size: 0.65em;
+                font-size: 0.7em;
             }
 
             .question-card-content {
@@ -1004,7 +1016,7 @@
             .question-card-content p,
             .question-card-content ul,
             .question-card-content ol {
-                font-size: 0.65em;
+                font-size: 0.7em;
             }
 
             .price-btn {
